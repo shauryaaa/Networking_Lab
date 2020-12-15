@@ -15,7 +15,6 @@ void main()
     {
         scanf("%d",&a[i]);
     }
-    //printf("-----------------------------------\n",nd);
     for(i=0,j=0;i<nd;i++)
     {
         for(k=0;k<maxp;k++)
@@ -66,18 +65,18 @@ void main()
         }
         temp[t]=sum%2;
         sum=0;
-        printf("P%d: %d\n",t+1,temp[t]);
+        printf("Parity bit P%d: %d\n",t+1,temp[t]);
     }
 
 
-    printf("\nHamming code: Sender side:   ");
+    printf("\n Sender side:");
     for(i=0;i<nh;i++)
     {
         printf("%d ",temp[i]);
     }
 
 
-    printf("\nHamming code: Receiver side: ");
+    printf("\n Receiver side:");
     for(i=0;i<nh;i++)
     {
         scanf("%d",&temp2[i]);
@@ -112,7 +111,7 @@ void main()
         }
         b[m]=sum%2;
         sum=0;
-        printf("P%d: %d\n",t+1,b[m]);
+        printf("Parity bit P%d: %d\n",t+1,b[m]);
         m--;
     }
     for(m=0;m<n;m++)
@@ -129,7 +128,7 @@ void main()
     for(i=0;i<nh;i++)
     {
         printf("%d ",temp2[i]);
-    }
+   }
 
     //printf("\n-----------------------------------\n",nd);
 }
